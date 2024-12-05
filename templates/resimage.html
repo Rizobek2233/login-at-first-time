@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .img-food{
+        padding: 40px;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    span{
+        gap: 20px;
+    
+    }
+    span img{
+        border-radius: 20px;
+        border: 1px solid aqua;
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    }
+</style>
+<body>
+    <div style="display: flex;" class="div">
+       <span class="img-food">
+        <img style="margin-left: 0px;" src="{% static 'lavash.jpg' %}" alt="Lavash">
+        <img style="margin-left: 0px;" src="{% static 'hotdog.jpg' %}" alt="Lavash">
+        <img style="margin-left: 0px;" src="{% static 'mastava.jpg' %}" alt="Lavash"> <br><br>
+        <img style="margin-left: 0px;" src="{% static 'osh.jpg' %}" alt="Lavash">
+        <img style="margin-left: 0px;" src="{% static 'tort.jpg' %}" alt="Lavash">
+        <img style="margin-left: 0px;" src="{% static 'keks.jpg' %}" alt="Lavash">
+       </span>
+        
+    </div>
+</tr>
+
+</body>
+</html>
+
+{% endblock content %}
